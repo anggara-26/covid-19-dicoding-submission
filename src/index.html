@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info | Covid-19</title>
+</head>
+<body class="bg-gray-50">
+    <header-component></header-component>
+    <covid-chart></covid-chart>
+    <select name="" id="selectDate">
+    </select>
+    <div class="grid grid-cols-12 mt-20">
+        <div class="grid md:grid-cols-4 sm:grid-cols-2 gap-3 col-start-2 col-span-10 font-bold uppercase" id="covidContainer">
+            <div class="bg-black text-gray-50 shadow-md p-4 rounded">
+                confirmed
+                <span class="block text-red-600" id="confirmed"></span>
+            </div>
+            <div class="bg-gray-800 text-red-100 shadow-md p-4 rounded">
+                active
+                <span class="block text-yellow-500" id="active"></span>
+            </div>
+            <div class="bg-white text-black shadow-md p-4 rounded">
+                recovered
+                <span class="block text-green-500" id="recovered"></span>
+            </div>
+            <div class="bg-red-400 text-gray-100 shadow-md p-4 rounded">
+                deaths
+                <span class="block text-gray-900" id="deaths"></span>
+            </div>
+        </div>
+    </div>
+    <div class="mt-10 mx-auto w-11/12">
+        <canvas id="covidChart"></canvas>
+    </div>
+</body>
+</html>

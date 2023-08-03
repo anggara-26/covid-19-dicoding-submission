@@ -1,0 +1,36 @@
+{
+  "name": "submission-dicoding-by-anggara",
+  "version": "1.0.0",
+  "description": "menjelaskan dan menampilkan data covid-19",
+  "main": "index.js",
+  "scripts": {
+    "build": "export NODE_ENV=production && webpack --config webpack.prod.js",
+    "start-dev": "webpack serve --config webpack.dev.js --mode=development --open"
+  },
+  "author": "Anggara Roshandi Putra",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "autoprefixer": "^10.3.4",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.2",
+    "postcss": "^8.3.6",
+    "postcss-loader": "^6.1.1",
+    "postcss-preset-env": "^6.7.0",
+    "style-loader": "^3.2.1",
+    "tailwindcss": "^2.2.15",
+    "webpack": "^5.52.1",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.2.1",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "@popperjs/core": "^2.10.1",
+    "bootstrap-icons": "^1.5.0",
+    "chart.js": "^3.5.1",
+    "file-loader": "^6.2.0"
+  }
+}
